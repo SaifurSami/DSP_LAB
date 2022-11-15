@@ -1,0 +1,19 @@
+clc;
+clear all;
+close all;
+
+x = input['Enter the first sequence '];
+h = input['Enter the second sequence'];
+
+lx = length(x);
+lh = length(h);
+l = lx+lh-1;
+
+y = zeros[1,l];
+
+for i=1:l
+    for j=1:i
+        y()
+
+
+
