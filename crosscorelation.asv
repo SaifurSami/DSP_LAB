@@ -1,0 +1,21 @@
+clc;
+clear all;
+close all;
+
+x = [1 2 3 4];
+y = [4 3 2 5 1];
+
+%x = input('Enter the 1st Sequence : '); 
+%y = input('Enter the 2nd Sequence : '); 
+
+yBar = fliplr(y);
+len = length(x) + length(y) - 1;
+
+X = [x,zeros(1,length(y))];
+Y = [y,zeros(1,length(x))];
+
+result = zeros(1,len);
+
+for i=1:len
+    for j=1:i
+        result(i) = result(i) + 
